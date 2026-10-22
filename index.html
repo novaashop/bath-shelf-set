@@ -465,7 +465,7 @@ function normTxt(t,keepDigits){let x=String(t||"").toLowerCase();try{x=x.normali
 let clientIp="";
 (function(){try{const c=new AbortController();const t=setTimeout(()=>c.abort(),4000);fetch("https://api64.ipify.org?format=json",{signal:c.signal}).then(r=>r.json()).then(j=>{clientIp=(j&&j.ip)||""}).catch(()=>{}).finally(()=>clearTimeout(t))}catch(e){}})();
 // ⚠️ ضع هنا رابط Google Apps Script الخاص بشيت هذا المنتج
-const GOOGLE_SCRIPT_URL = "PASTE_YOUR_GOOGLE_SCRIPT_URL_FOR_THIS_PRODUCT_HERE";
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzcfbUu6JS1uuKqqy78o4JJP7QnfZYRu3a32zezdKiuoaXFMcr_jJx3D6YocyacSMZC/exec";
 
 const shipping = {
  "Adrar": [1000, 650], "Chlef": [650, 450], "Laghouat": [850, 600], "Oum El Bouaghi": [750, 550],
